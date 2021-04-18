@@ -22,17 +22,7 @@
  * limitations under the License.
  */
 
-#if defined (ARMCM33)
-  #include "ARMCM33.h"
-#elif defined (ARMCM33_TZ)
-  #include "ARMCM33_TZ.h"
-#elif defined (ARMCM33_DSP_FP)
-  #include "ARMCM33_DSP_FP.h"
-#elif defined (ARMCM33_DSP_FP_TZ)
-  #include "ARMCM33_DSP_FP_TZ.h"
-#else
-  #error device not specified!
-#endif
+#include "cmsis_device.h"
 
 /*----------------------------------------------------------------------------
   External References

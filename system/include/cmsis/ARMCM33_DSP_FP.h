@@ -1,7 +1,7 @@
 /**************************************************************************//**
- * @file     ARMCM33_DSP_FP_TZ.h
+ * @file     ARMCM33_DSP_FP.h
  * @brief    CMSIS Core Peripheral Access Layer Header File for
- *           ARMCM33 Device (configured for ARMCM33 with FPU, with DSP extension, with TrustZone)
+ *           ARMCM33 Device (configured for ARMCM33 with FPU, with DSP extension)
  * @version  V5.3.1
  * @date     09. July 2018
  ******************************************************************************/
@@ -23,8 +23,8 @@
  * limitations under the License.
  */
 
-#ifndef ARMCM33_DSP_FP_TZ_H
-#define ARMCM33_DSP_FP_TZ_H
+#ifndef ARMCM33_DSP_FP_H
+#define ARMCM33_DSP_FP_H
 
 #ifdef __cplusplus
 extern "C" {
@@ -91,7 +91,7 @@ typedef enum IRQn
 
 /* --------  Configuration of Core Peripherals  ----------------------------------- */
 #define __CM33_REV                0x0000U   /* Core revision r0p1 */
-#define __SAUREGION_PRESENT       1U        /* SAU regions present */
+#define __SAUREGION_PRESENT       0U        /* SAU regions present */
 #define __MPU_PRESENT             1U        /* MPU present */
 #define __VTOR_PRESENT            1U        /* VTOR present */
 #define __NVIC_PRIO_BITS          3U        /* Number of Bits used for Priority Levels */
@@ -127,4 +127,4 @@ typedef enum IRQn
 }
 #endif
 
-#endif  /* ARMCM33_DSP_FP_TZ_H */
+#endif  /* ARMCM33_DSP_FP_H */
